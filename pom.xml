@@ -22,11 +22,18 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.karatelabs/karate-core -->
+        <dependency>
+            <groupId>io.karatelabs</groupId>
+            <artifactId>karate-core</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-junit4</artifactId>
-            <version>0.9.6</version>
+            <artifactId>karate-junit5</artifactId>
+            <version>1.4.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -43,6 +50,12 @@
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>3.8.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
