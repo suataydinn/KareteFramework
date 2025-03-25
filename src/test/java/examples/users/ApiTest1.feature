@@ -39,6 +39,15 @@ Feature: exchange rate api tests
     And match response.rates.USD == '#present'
     And match response.rates.USD == 1.4481
 
+    And match response[*].email contains 'Sincere@april.biz'
+    * def expectedList = ['red', 'blue', 'green']
+    * def actualList = ['green', 'red', 'blue']
+    * match actualList contains only expectedList
+    * def age = 25
+    * assert age > 18
+ # Başka Bir Test Çağırma
+    * def result = call read('anotherFeature.feature')
+    * match result.responseStatus == 200
 
 
 
