@@ -1,7 +1,6 @@
 Feature: Data driven tests
   Scenario Outline: get token for user <email>
-        #update url
-    Given url 'https://test-api-qa2.herokuapp.com/'
+    Given url 'https://reservation-api-qa2.herokuapp.com/'
     And path 'sign'
     And header Accept = 'application/json'
     And param email = '<email>'
@@ -21,8 +20,7 @@ Feature: Data driven tests
 
 
   Scenario Outline: get token for user <email>
-   #update url
-    Given url 'https://test-api-qa2.herokuapp.com/'
+    Given url 'https://reservation-api-qa2.herokuapp.com/'
     And path 'sign'
     And header Accept = 'application/json'
     And param email = '<email>'
@@ -40,8 +38,7 @@ Feature: Data driven tests
       * def query = "select id,firstname,lastname,role from users where email = 'sbirdbj@fc2.com'"
       * def dbResult = DBUtils.getRowMap(query)
       * print 'DATABASE RESULT',dbResult
-   #update url
-      Given url 'https://test-api-qa2.herokuapp.com/'
+      Given url 'https://reservation-api-qa2.herokuapp.com/'
       And path 'sign'
       And header Accept = 'application/json'
       And param email = 'sbirdbj@fc2.com'
@@ -50,8 +47,7 @@ Feature: Data driven tests
       Then status 200
       And print response.accessToken
       And def token = response.accessToken
-   #update url
-      Given url 'https://test-api-qa2.herokuapp.com/'
+      Given url 'https://reservation-api-qa2.herokuapp.com/'
       And path 'api/users/me'
       And header Authorization = 'Bearer ' + token
       And header Accept = 'application/json'
@@ -72,8 +68,7 @@ Feature: Data driven tests
     * def query = "select id,firstname,lastname,role from users where email = '<email>'"
     * def dbResult = DBUtils.getRowMap(query)
     * print 'DATABASE RESULT',dbResult
-   #update url
-    Given url 'https://test-api-qa2.herokuapp.com/'
+    Given url 'https://reservation-api-qa2.herokuapp.com/'
     And path 'sign'
     And header Accept = 'application/json'
     And param email = '<email>'
@@ -82,8 +77,7 @@ Feature: Data driven tests
     Then status 200
     And print response.accessToken
     And def token = response.accessToken
-   #update url
-    Given url 'https://test-api-qa2.herokuapp.com/'
+    Given url 'https://reservation-api-qa2.herokuapp.com/'
     And path 'api/users/me'
     And header Authorization = 'Bearer ' + token
     And header Accept = 'application/json'
