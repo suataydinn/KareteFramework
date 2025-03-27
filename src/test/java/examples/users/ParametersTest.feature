@@ -2,8 +2,8 @@ Feature:  Parameters examples
 
   Background:
     * def baseUrl = 'https://api.exchangeratesapi.io'
-    * def spartanUrl = 'http://00.00.000.92:8000'
-    * def hrUrl = 'http://00.00.000.92:1000/ords/hr'
+    * def spartanUrl = 'http://52.11.111.11:8000'
+    * def hrUrl = 'http://11.11.111.92:1000/ords/hr'
 
   Scenario: path parameters
     Given url baseUrl
