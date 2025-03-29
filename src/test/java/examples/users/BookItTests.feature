@@ -1,8 +1,7 @@
 Feature: Bookit Api tests
 
     Background:
-          #update url
-      * def baseUrl = 'https://test-api-qa2.herokuapp.com/'
+      * def baseUrl = 'https://reservation-api-qa2.herokuapp.com/'
       #point another feature file
       * def AuthFeature = call read('classpath:features/BookItAuth.feature')
       * def accessToken = AuthFeature.token
