@@ -1,8 +1,7 @@
 Feature: get user token
   @Test
     Scenario: get one user token
-    #update url
-      Given url 'https://test-api-qa3.herokuapp.com/'
+      Given url 'https://reservation-api-qa3.herokuapp.com/'
       And path 'sign'
       And header Accept = 'application/json'
       And param email = 'sbirdbj@fc2.com'
